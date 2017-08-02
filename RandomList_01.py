@@ -2,15 +2,17 @@
 
 import random
 
-randomList = []
+def genList(s):
+    randomList = []
 
-for i in range(20):
-    randomList.append(random.randint(1, 50))
-print(randomList)
+    for i in range(20):
+        randomList.append(random.randint(1, 50))
+    return randomList
+
+print(genList(30))
 
 #This is creating the list using list comprehensions
-randomList = [ random.randint(1, 50) for i in range(20) ]
-print(randomList)
+#randomList = [ random.randint(1, 50) for i in range(20) ]
+#print(randomList)
 
 
-# Write a program caculate the sum of randomList above and print it on the console
