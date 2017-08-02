@@ -13,4 +13,4 @@ randomList = [ random.randint(1, 50) for i in range(20) ]
 print(randomList)
 
 
-# Write a program caculate the sum of randomList above.
+# Write a program caculate the sum of randomList above and print it on the console
