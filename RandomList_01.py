@@ -5,7 +5,7 @@ import random
 def genList(s):
     randomList = []
 
-    for i in range(20):
+    for i in range(s):
         randomList.append(random.randint(1, 50))
     return randomList
 
