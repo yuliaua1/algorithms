@@ -15,5 +15,12 @@ for i in range(10):
     randomList.append(random.randint(1,20))
     sumNumbers = sumNumbers + randomList[i]
 
+
 print(randomList)
 print(sumNumbers)
+
+myHumanReadableString = ''
+for num in randomList:
+    myHumanReadableString = myHumanReadableString + ' + ' + str(num)
+
+print(myHumanReadableString + ' = ' + str(sumNumbers))
