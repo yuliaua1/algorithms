@@ -3,21 +3,23 @@
 import random
 
 
-listA =[]
+originalList =[]
 for i in range(10):
-	listA.append(random.randint(1,100))
-print(listA)
+	originalList.append(random.randint(1,100))
+print(originalList)
 
 #--------------------------------------------------------
 
-def reverselist():
-	listB =[]
-	for i in range(len(listA)):
-		listB.append(listA[len(listA) - i -1])
+def revfunction():
+	reverseList =[]
+	for i in range(len(originalList)):
+		reverseList.append(originalList[len(originalList) - i -1])
 
-	return(listB)
+	return(reverseList)
 #---------------------------------------------------------
 print('Please see below the reverse list: ')
 
-print(reverselist())
+ModifList = revfunction()
+
+print(ModifList)
 
