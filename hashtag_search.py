@@ -29,11 +29,14 @@ for key, value in X.iteritems():
     print('\t' + str(key))
     #print(type(value))
 print('-'*40)
-
 print("just for the sake of my happiness {}\n", type(X['statuses']))
 for e in X['statuses']:
-	pprint.pprint( e )
-	print(50* '=')
+        pprint.pprint( e )
+        print(50* '=')
+
+
+for key, value in e['user'].iteritems():
+    print('\t' + str(key))
 
 
 
