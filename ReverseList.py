@@ -1,23 +1,23 @@
 
+
 import random
 
-assigned_length = 10
 
-Random_list = []
-for i in range(assigned_length):
-	Random_list.append(random.randint(1, 100))
-print(Random_list)
+listA =[]
+for i in range(10):
+	listA.append(random.randint(1,100))
+print(listA)
 
-print("The list of random numbers is " + str(assigned_length))
+#--------------------------------------------------------
 
+def reverselist():
+	listB =[]
+	for i in range(len(listA)):
+		listB.append(listA[len(listA) - i -1])
 
+	return(listB)
+#---------------------------------------------------------
+print('Please see below the reverse list: ')
 
-def reverse_list(assigned_length):
+print(reverselist())
 
-	for i in range(assigned_length/2):
-		tempBox = Random_list[i]
-		Random_list[i] = Random_list[assigned_length - 1- i]
-		Random_list[assigned_length-1-i] = tempBox
-	print(Random_list)
-
-reverse_list(assigned_length)
