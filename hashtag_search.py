@@ -1,5 +1,3 @@
-
-
 import pprint
 from twitter import Twitter, OAuth
 from os.path import expanduser
@@ -12,31 +10,33 @@ x = home + '/Documents/Development/Y.txt'
 with open( x, 'r') as f:
     l = f.readlines()
 
-
 myoauth = OAuth (l[2].strip(), l[3].strip(), l[0].strip(), l[1].strip())
 
+# variable to connect to Twitter API
 myT = Twitter(auth = myoauth)
-X = myT.search.tweets(q = "#Apollo11")
+#------------------------ function to search hashtag --------------------------
+def searchHashtag(hashtagX):
+# variable to hold results of the search by hashtag
+    X = myT.search.tweets(q = hashtagX)
 
-print('-' *40)
-
-print(type(X))
-
-print('-' *40)
-
-
-for key, value in X.iteritems():
-    print('\t' + str(key))
-    #print(type(value))
-print('-'*40)
-print("just for the sake of my happiness {}\n", type(X['statuses']))
-for e in X['statuses']:
-        pprint.pprint( e )
-        print(50* '=')
+# iterate through the statuses to capture description for each user
+    print(100 * '=')
+    print(15*'=' + '  The list of the user description for the hashtag {} is: '.format(hashtagX) + '     ' + 15 * "=")
+    print(100 * '=')
+    counter = 0
+    for e in X['statuses']:
+        counter += 1
+        userDictionary = e['user']
+        userDescription = userDictionary['description']
+        print(str(counter)+'\t\t' + userDescription)
+#------------------------------- End of Function --------------------------------
 
 
-for key, value in e['user'].iteritems():
-    print('\t' + str(key))
+#searchHashtag('#Fashion')
+#searchHashtag('#Apollo11')
+searchHashtag('#Kids')
+
+
 
 
 
