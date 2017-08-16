@@ -20,8 +20,10 @@ for myLetter in L:
 
 print(letterOccured)
 
+
+myRandomLetter = []
 for key, value in letterOccured.iteritems():
 
     if value == 1:
-        print(key)
-
+        myRandomLetter.append(key)
+print(str(myRandomLetter) + '>>>>>> letters occurring one time.')
