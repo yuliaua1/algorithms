@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MasterMind3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ur5-NX-1wM">
+                                <rect key="frame" x="105" y="192" width="164.5" height="310.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wrV-9m-2wP">
+                                        <rect key="frame" x="0.0" y="0.0" width="164.5" height="186"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🔵🔴⚫️⚪️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkD-Pg-ioU">
+                                                <rect key="frame" x="0.0" y="0.0" width="164.5" height="36"/>
+                                                <color key="backgroundColor" red="0.3651411219569628" green="1" blue="0.46670467057697174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-ex-UOD">
+                                                <rect key="frame" x="0.0" y="36" width="164.5" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtF-Pe-Bn1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39V-2V-xyF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEl-06-qe4">
+                                                        <rect key="frame" x="30" y="0.0" width="30.5" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B5o-xa-ceb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBO-1J-WLY">
+                                                        <rect key="frame" x="60.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDn-LE-3s7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIk-JY-ZBA">
+                                                        <rect key="frame" x="90.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TMr-Yv-W39"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BbB-z0-ge9">
+                                                        <rect key="frame" x="120.5" y="0.0" width="44" height="30"/>
+                                                        <state key="normal" title="Check"/>
+                                                        <connections>
+                                                            <action selector="checkChoices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4c-8M-1qZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPh-sE-31c">
+                                                <rect key="frame" x="0.0" y="66" width="164.5" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmm-9m-kQn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgy-Cn-pah"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsG-1s-0rS">
+                                                        <rect key="frame" x="30" y="0.0" width="30.5" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pkX-QI-aPS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12S-SX-0zc">
+                                                        <rect key="frame" x="60.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhw-Ki-qaw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtL-pA-PpD">
+                                                        <rect key="frame" x="90.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcO-GU-v8n"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="PNm-C4-kgp">
+                                                        <rect key="frame" x="120.5" y="0.0" width="44" height="30"/>
+                                                        <state key="normal" title="Check"/>
+                                                        <connections>
+                                                            <action selector="checkChoices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MXY-5L-dhS"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J4u-ef-MmH">
+                                                <rect key="frame" x="0.0" y="96" width="164.5" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgw-uh-D5J">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ozY-39-6pN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-2T-hPi">
+                                                        <rect key="frame" x="30" y="0.0" width="30.5" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kok-TZ-hSw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqh-pu-nvk">
+                                                        <rect key="frame" x="60.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Bl-0l-LmY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf8-nY-uOS">
+                                                        <rect key="frame" x="90.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FHJ-Q6-Y6l"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="R0f-fp-ruQ">
+                                                        <rect key="frame" x="120.5" y="0.0" width="44" height="30"/>
+                                                        <state key="normal" title="Check"/>
+                                                        <connections>
+                                                            <action selector="checkChoices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wo4-sJ-PaO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0HA-xa-RBT">
+                                                <rect key="frame" x="0.0" y="126" width="164.5" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmp-D9-Mbo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LX8-z3-8Jp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMb-j1-Bn0">
+                                                        <rect key="frame" x="30" y="0.0" width="30.5" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SiY-0L-OFk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrU-Vf-exL">
+                                                        <rect key="frame" x="60.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gjI-zh-iTA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkz-QN-46U">
+                                                        <rect key="frame" x="90.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPu-nf-0cL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iDI-3E-jo8">
+                                                        <rect key="frame" x="120.5" y="0.0" width="44" height="30"/>
+                                                        <state key="normal" title="Check"/>
+                                                        <connections>
+                                                            <action selector="checkChoices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="90H-VT-4ZS"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jjg-EJ-HM5">
+                                                <rect key="frame" x="0.0" y="156" width="164.5" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdr-q5-88f">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgp-Ex-UOa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-w7-5PP">
+                                                        <rect key="frame" x="30" y="0.0" width="30.5" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KKN-3y-97S"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwC-6u-uMf">
+                                                        <rect key="frame" x="60.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHX-hz-GWD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo6-4s-laK">
+                                                        <rect key="frame" x="90.5" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="❍"/>
+                                                        <connections>
+                                                            <action selector="takeMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="utr-9m-Dwk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fC5-gf-iwM">
+                                                        <rect key="frame" x="120.5" y="0.0" width="44" height="30"/>
+                                                        <state key="normal" title="Check"/>
+                                                        <connections>
+                                                            <action selector="checkChoices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Fe-P7-I56"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHi-1k-rfz">
+                                        <rect key="frame" x="22" y="195" width="120.5" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY2-hv-2TO">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="⚪️"/>
+                                                <connections>
+                                                    <action selector="chooseMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Frj-Dl-LiY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15n-ud-TA7">
+                                                <rect key="frame" x="30" y="0.0" width="30.5" height="30"/>
+                                                <state key="normal" title="⚫️"/>
+                                                <connections>
+                                                    <action selector="chooseMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3k-Xj-UML"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXw-HY-QLg">
+                                                <rect key="frame" x="60.5" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="🔴"/>
+                                                <connections>
+                                                    <action selector="chooseMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gd5-Ic-GAb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCk-pV-uEu">
+                                                <rect key="frame" x="90.5" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="🔵"/>
+                                                <connections>
+                                                    <action selector="chooseMarble:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWB-Vn-jYw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BJ7-dj-zqT">
+                                        <rect key="frame" x="54.5" y="234" width="55.5" height="37.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtf-Jz-bAd">
+                                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="❍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PR-lw-xo7">
+                                                <rect key="frame" x="0.0" y="17" width="55.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuD-q2-suO">
+                                        <rect key="frame" x="44.5" y="280.5" width="75.5" height="30"/>
+                                        <state key="normal" title="New Game"/>
+                                        <connections>
+                                            <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSy-Ha-lzO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chosenColorLable" destination="8PR-lw-xo7" id="gxs-AQ-NjB"/>
+                        <outlet property="masterMindCode" destination="IkD-Pg-ioU" id="sSI-5E-ITV"/>
+                        <outletCollection property="guessButtons" destination="Cdr-q5-88f" collectionClass="NSMutableArray" id="ASn-z3-9p6"/>
+                        <outletCollection property="guessButtons" destination="NZ7-w7-5PP" collectionClass="NSMutableArray" id="fT7-mS-EVM"/>
+                        <outletCollection property="guessButtons" destination="fwC-6u-uMf" collectionClass="NSMutableArray" id="2qM-e3-5UJ"/>
+                        <outletCollection property="guessButtons" destination="Bo6-4s-laK" collectionClass="NSMutableArray" id="xdI-4c-sJI"/>
+                        <outletCollection property="guessButtons" destination="fC5-gf-iwM" collectionClass="NSMutableArray" id="7ne-pS-zzg"/>
+                        <outletCollection property="guessButtons" destination="lmp-D9-Mbo" collectionClass="NSMutableArray" id="CqD-IS-bpb"/>
+                        <outletCollection property="guessButtons" destination="lMb-j1-Bn0" collectionClass="NSMutableArray" id="Inx-7u-m9z"/>
+                        <outletCollection property="guessButtons" destination="FrU-Vf-exL" collectionClass="NSMutableArray" id="Acs-u7-52i"/>
+                        <outletCollection property="guessButtons" destination="Mkz-QN-46U" collectionClass="NSMutableArray" id="B8u-wc-U5E"/>
+                        <outletCollection property="guessButtons" destination="iDI-3E-jo8" collectionClass="NSMutableArray" id="Eqd-jk-DxC"/>
+                        <outletCollection property="guessButtons" destination="dgw-uh-D5J" collectionClass="NSMutableArray" id="CN4-wx-sTd"/>
+                        <outletCollection property="guessButtons" destination="BCJ-2T-hPi" collectionClass="NSMutableArray" id="hZz-DI-dS5"/>
+                        <outletCollection property="guessButtons" destination="Eqh-pu-nvk" collectionClass="NSMutableArray" id="A0h-nx-gyw"/>
+                        <outletCollection property="guessButtons" destination="Sf8-nY-uOS" collectionClass="NSMutableArray" id="iTB-xf-UUf"/>
+                        <outletCollection property="guessButtons" destination="R0f-fp-ruQ" collectionClass="NSMutableArray" id="4pq-yL-W8r"/>
+                        <outletCollection property="guessButtons" destination="bmm-9m-kQn" collectionClass="NSMutableArray" id="cGu-I6-Tz4"/>
+                        <outletCollection property="guessButtons" destination="IsG-1s-0rS" collectionClass="NSMutableArray" id="Sh1-5E-EIa"/>
+                        <outletCollection property="guessButtons" destination="12S-SX-0zc" collectionClass="NSMutableArray" id="AsX-o4-tpP"/>
+                        <outletCollection property="guessButtons" destination="RtL-pA-PpD" collectionClass="NSMutableArray" id="TIc-2y-AqD"/>
+                        <outletCollection property="guessButtons" destination="PNm-C4-kgp" collectionClass="NSMutableArray" id="yPC-ct-mhc"/>
+                        <outletCollection property="guessButtons" destination="CtF-Pe-Bn1" collectionClass="NSMutableArray" id="LN5-44-ZdR"/>
+                        <outletCollection property="guessButtons" destination="zEl-06-qe4" collectionClass="NSMutableArray" id="tin-be-AxH"/>
+                        <outletCollection property="guessButtons" destination="RBO-1J-WLY" collectionClass="NSMutableArray" id="PFe-UG-A4u"/>
+                        <outletCollection property="guessButtons" destination="NIk-JY-ZBA" collectionClass="NSMutableArray" id="X5Z-6X-pEi"/>
+                        <outletCollection property="guessButtons" destination="BbB-z0-ge9" collectionClass="NSMutableArray" id="Zjz-K4-2FE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
