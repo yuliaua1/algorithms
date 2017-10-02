@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func newGame(_ sender: UIButton) {
+        guessButtons[0].setTitle("🍎", for: UIControlState.normal)
+        
         print("New game is here")
     }
     
