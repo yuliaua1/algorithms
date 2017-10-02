@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var guessButtons: [UIButton]!
+    
+    @IBAction func checkMe(_ sender: UIButton) {
+        print(guessButtons.index(of: sender)!)
+    }
+    
     @IBAction func newGame(_ sender: UIButton) {
         print("New game")
     }
