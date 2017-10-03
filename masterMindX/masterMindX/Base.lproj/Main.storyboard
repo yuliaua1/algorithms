@@ -20,7 +20,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mz-lw-sgR">
                                 <rect key="frame" x="140" y="602" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="New Game"/>
+                                <state key="normal" title="Change 2"/>
                                 <connections>
                                     <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKo-il-qbE"/>
                                 </connections>
@@ -145,6 +145,94 @@
                                     <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQT-J4-joN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbL-qY-N03">
+                                <rect key="frame" x="38" y="602" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change 1"/>
+                                <connections>
+                                    <action selector="changeButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SWX-Xt-DdP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9M-Lr-tpC">
+                                <rect key="frame" x="134" y="429" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="❍"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v4c-Zt-PZz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eve-qf-BlW">
+                                <rect key="frame" x="172" y="429" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="❍"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pv2-VZ-wNp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7v-2n-YF4">
+                                <rect key="frame" x="210" y="429" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="❍"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6F-0M-SId"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DS-Wv-yVt">
+                                <rect key="frame" x="241" y="429" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Check"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8P6-ci-xmd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtm-dT-V38">
+                                <rect key="frame" x="96" y="429" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="❍"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSf-Gq-Sx2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLk-lL-bdi">
+                                <rect key="frame" x="134" y="391" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="❍"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qxr-Xl-awM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15V-5F-A5M">
+                                <rect key="frame" x="172" y="391" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="❍"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0s-DA-aam"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68c-z4-ZHi">
+                                <rect key="frame" x="210" y="391" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="❍"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LBP-ly-TSm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ES-Pf-gz6">
+                                <rect key="frame" x="241" y="391" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Check"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Klv-Kj-mxC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpO-MJ-8EN">
+                                <rect key="frame" x="96" y="391" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="❍"/>
+                                <connections>
+                                    <action selector="checkMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzL-Kv-zYc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -165,6 +253,16 @@
                         <outletCollection property="guessButtons" destination="H9N-FV-OvT" collectionClass="NSMutableArray" id="4L4-D7-Ces"/>
                         <outletCollection property="guessButtons" destination="jw3-Yb-Vrc" collectionClass="NSMutableArray" id="zuz-hn-Ud6"/>
                         <outletCollection property="guessButtons" destination="dyH-md-f3d" collectionClass="NSMutableArray" id="ZNG-XG-Ryc"/>
+                        <outletCollection property="guessButtons" destination="xtm-dT-V38" collectionClass="NSMutableArray" id="aXM-T4-yzw"/>
+                        <outletCollection property="guessButtons" destination="X9M-Lr-tpC" collectionClass="NSMutableArray" id="xMd-J2-HDR"/>
+                        <outletCollection property="guessButtons" destination="Eve-qf-BlW" collectionClass="NSMutableArray" id="AlB-mi-5CV"/>
+                        <outletCollection property="guessButtons" destination="i7v-2n-YF4" collectionClass="NSMutableArray" id="uhN-6x-Blx"/>
+                        <outletCollection property="guessButtons" destination="9DS-Wv-yVt" collectionClass="NSMutableArray" id="Sci-H6-6Ob"/>
+                        <outletCollection property="guessButtons" destination="KpO-MJ-8EN" collectionClass="NSMutableArray" id="WAu-W8-dXT"/>
+                        <outletCollection property="guessButtons" destination="mLk-lL-bdi" collectionClass="NSMutableArray" id="vzp-xv-whj"/>
+                        <outletCollection property="guessButtons" destination="15V-5F-A5M" collectionClass="NSMutableArray" id="nPB-vi-jya"/>
+                        <outletCollection property="guessButtons" destination="68c-z4-ZHi" collectionClass="NSMutableArray" id="3sT-pG-tgf"/>
+                        <outletCollection property="guessButtons" destination="1ES-Pf-gz6" collectionClass="NSMutableArray" id="pXK-DJ-Mgi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
