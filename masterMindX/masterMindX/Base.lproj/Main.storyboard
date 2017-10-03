@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change 2"/>
                                 <connections>
-                                    <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKo-il-qbE"/>
+                                    <action selector="changeButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKo-il-qbE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtF-Wt-Ya9">

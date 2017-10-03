@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         print(guessButtons.index(of: sender)!)
     }
     
-    @IBAction func newGame(_ sender: UIButton) {
+    @IBAction func changeButton2(_ sender: UIButton) {
         for i in 0...guessButtons.count - 1 {
             guessButtons[i].setTitle("🍎", for: UIControlState.normal)
         }
