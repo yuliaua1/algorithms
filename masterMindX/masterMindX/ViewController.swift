@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var guessButtons: [UIButton]!
     
+    // game logic will be implemented here.
     @IBAction func checkMe(_ sender: UIButton) {
         print(guessButtons.index(of: sender)!)
     }
