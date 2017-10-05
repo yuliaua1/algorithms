@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var selectedMarble: UILabel!
     
+    @IBOutlet weak var masterCode: UILabel!
+    
     @IBOutlet var guessButtons: [UIButton]!
     
     @IBAction func checkMe(_ sender: UIButton) {
@@ -37,7 +39,25 @@ class ViewController: UIViewController {
                 guessButtons[i].setTitle("Check", for: UIControlState.normal)
             }
         }
+        var marbles = ["🔴","🔵", "⚫️", "⚪️"]
+        
+        
+        for _ in 0...20 {
+            
+            let i = Int(arc4random_uniform(4))
+            let j = Int(arc4random_uniform(4))
+            
+            let temp = marbles[i]
+            marbles[i] = marbles[j]
+            marbles[j] = temp
+        }
+        masterCode.text = String(describing: marbles)
+        //masterCode.text = String (marbles)
+        
+        
+        
     }
+
     
     @IBAction func choseMarble(_ sender: UIButton) {
         selectedMarble.text = sender.currentTitle!

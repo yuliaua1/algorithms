@@ -271,11 +271,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="masterCode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-yZ-5lp">
+                                <rect key="frame" x="66" y="108" width="221" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="masterCode" destination="Agm-yZ-5lp" id="83A-vd-jgz"/>
                         <outlet property="selectedMarble" destination="xH8-HN-JwG" id="rAw-F3-tfD"/>
                         <outletCollection property="guessButtons" destination="mHm-Ha-jPO" collectionClass="NSMutableArray" id="G2g-dQ-32D"/>
                         <outletCollection property="guessButtons" destination="RtF-Wt-Ya9" collectionClass="NSMutableArray" id="eZv-Hk-DeT"/>
