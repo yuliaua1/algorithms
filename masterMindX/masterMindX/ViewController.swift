@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var selectedMarble: UILabel!
     
     @IBOutlet var guessButtons: [UIButton]!
     
@@ -19,9 +20,12 @@ class ViewController: UIViewController {
               guessButtons[index - j].setTitle("🍏", for: UIControlState.normal)
             }
         }
+        else {
+            guessButtons[index].setTitle(selectedMarble.text, for: UIControlState.normal)
+        }
+        
     }
     
-   
     @IBAction func newGame(_ sender: UIButton) {
         
         for i in 0...guessButtons.count - 1 {
@@ -35,7 +39,13 @@ class ViewController: UIViewController {
         }
     }
     
-//    override func viewDidLoad() {
+    @IBAction func choseMarble(_ sender: UIButton) {
+        selectedMarble.text = sender.currentTitle!
+    }
+
+    
+    
+    //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //        // Do any additional setup after loading the view, typically from a nib.
 //    }
