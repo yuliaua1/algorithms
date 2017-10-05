@@ -15,7 +15,10 @@ class ViewController: UIViewController {
     // game logic will be implemented here.
     // Yuliya will implement the brain logic here.
     @IBAction func checkMe(_ sender: UIButton) {
-        print(guessButtons.index(of: sender)!)
+        let index = guessButtons.index(of: sender)!
+        if (index + 1) % 5 == 0 {
+            print(guessButtons.index(of: sender)!)
+        }
     }
     
    
