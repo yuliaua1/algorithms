@@ -12,12 +12,12 @@ class ViewController: UIViewController {
     
     @IBOutlet var guessButtons: [UIButton]!
     
-    // game logic will be implemented here.
-    // Yuliya will implement the brain logic here.
     @IBAction func checkMe(_ sender: UIButton) {
         let index = guessButtons.index(of: sender)!
         if (index + 1) % 5 == 0 {
-            print(guessButtons.index(of: sender)!)
+            for j in 1...4 {
+              guessButtons[index - j].setTitle("🍏", for: UIControlState.normal)
+            }
         }
     }
     
