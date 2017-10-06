@@ -40,8 +40,7 @@ class ViewController: UIViewController {
             }
         }
         var marbles = ["🔴","🔵", "⚫️", "⚪️"]
-        
-        
+
         for _ in 0...20 {
             
             let i = Int(arc4random_uniform(4))
@@ -51,11 +50,12 @@ class ViewController: UIViewController {
             marbles[i] = marbles[j]
             marbles[j] = temp
         }
-        masterCode.text = String(describing: marbles)
-        //masterCode.text = String (marbles)
         
-        
-        
+        var result = ""
+        for i in 0...3 {
+            result = result + marbles[i]
+        }
+        masterCode.text = result
     }
 
     
