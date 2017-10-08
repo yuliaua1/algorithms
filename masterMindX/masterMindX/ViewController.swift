@@ -13,30 +13,77 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var masterCode: UILabel!
     
-    @IBOutlet var guessButtons: [UIButton]!
+    @IBOutlet var guessButtonsArray: [UIButton]!
     
     @IBAction func checkMe(_ sender: UIButton) {
-        let index = guessButtons.index(of: sender)!
-        if (index + 1) % 5 == 0 {
-            for j in 1...4 {
-              guessButtons[index - j].setTitle("🍏", for: UIControlState.normal)
+        
+        let index = guessButtonsArray.index(of: sender)!
+        var guessText = ""
+        if (index + 1 ) % 5 == 0 {
+            for i in 1...4 {
+                guessText = guessButtonsArray[index - i].titleLabel!.text! + guessText
+            }
+            if guessText == masterCode.text! {
+                guessButtonsArray[index].setTitle("✅", for: UIControlState.normal)
+                print("You won!")
+            }
+            else{
+                print("try again")
             }
         }
         else {
-            guessButtons[index].setTitle(selectedMarble.text, for: UIControlState.normal)
+         guessButtonsArray[index].setTitle(selectedMarble.text!, for: UIControlState.normal)
         }
+        
+        print(guessText)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+//        var guessMarble = ""
+//        print(guessMarble)
+//
+        //
+//        for i in 1...4 {
+//            let indexOfChoiceMarble = checkButtonIndex - i
+//            let chosenMarble = guessButtonsArray[indexOfChoiceMarble].titleLabel!.text!
+//            guessMarble = guessMarble + chosenMarble
+//        }
+        
+        
+//        let indexKazem = guessButtons.index(of: sender)!
+//        if (index + 1) % 5 == 0 {
+//            for j in 1...4 {
+//              guessButtons[index - j].setTitle("🍏", for: UIControlState.normal)
+//            }
+//        }
+//        else {
+//            guessButtons[index].setTitle(selectedMarble.text, for: UIControlState.normal)
+//        }
         
     }
     
     @IBAction func newGame(_ sender: UIButton) {
         
-        for i in 0...guessButtons.count - 1 {
+        for i in 0...guessButtonsArray.count - 1 {
             if (i + 1) % 5 != 0 {
                 
-                guessButtons[i].setTitle("🍎", for: UIControlState.normal)
+                guessButtonsArray[i].setTitle("❍", for: UIControlState.normal)
             }
             else {
-                guessButtons[i].setTitle("Check", for: UIControlState.normal)
+                guessButtonsArray[i].setTitle("Check", for: UIControlState.normal)
             }
         }
         var marbles = ["🔴","🔵", "⚫️", "⚪️"]
