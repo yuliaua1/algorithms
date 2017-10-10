@@ -19,20 +19,59 @@ class ViewController: UIViewController {
         
         let index = guessButtonsArray.index(of: sender)!
         var guessText = ""
+        
         if (index + 1 ) % 5 == 0 {
+     
             for i in 1...4 {
-                guessText = guessButtonsArray[index - i].titleLabel!.text! + guessText
+                if guessButtonsArray[index - i].titleLabel!.text! == "❍" {
+                    let alertController = UIAlertController(title: "Incomplete Guess", message: "Yuliya says Please Chose four marbels.", preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    present(alertController, animated: true, completion: nil)
+                    print("old print to the developer")
+                    return
+                }
+                else {
+                    guessText = guessButtonsArray[index - i].titleLabel!.text! + guessText
+                }
             }
-            if guessText == masterCode.text! {
-                guessButtonsArray[index].setTitle("✅", for: UIControlState.normal)
-                print("You won!")
+
+            var Master = Array(masterCode.text!.characters)
+            var Guess = Array(guessText.characters)
+          
+            
+            var hint = ""
+            for i in 0...3 {
+                if Master[i] == Guess[i] {
+                    hint = hint + "•"
+                    Master[i] = "-"
+                    Guess[i] = "-"
+                }
+                if hint.count == 2 {
+                    hint = hint + "\r"
+                }
             }
-            else{
-                print("try again")
+            for i in 0...3 {
+                for j in 0...3 {
+                    if Master[i] == Guess[j] {
+                        if Master[i] != "-" {
+                            hint = hint + "◦"
+                            Master[i] = "-"
+                            Guess[j] = "-"
+                        }
+                    }
+                    if hint.count == 2 {
+                        hint = hint + "\r"
+                    }
+                }
             }
+            guessButtonsArray[index].setTitle(hint, for: UIControlState.normal)
+            
         }
         else {
-         guessButtonsArray[index].setTitle(selectedMarble.text!, for: UIControlState.normal)
+            guessButtonsArray[index].setTitle(selectedMarble.text!, for: UIControlState.normal)
         }
         
         print(guessText)
